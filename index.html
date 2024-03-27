@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomodoro Timer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="light-mode.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="dark-mode.css" media="(prefers-color-scheme: dark)">
+  <style>
+    /* Additional CSS for session history */
+    .session-history {
+      margin-top: 20px;
+    }
+    .session-history h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .session-history ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .session-history li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <div class="container">
+      <h1> ------ POMODORO TIMER ------</h1>
+      <div class="timer-container">
+        <div class="timer" id="timer">25:00</div>
+        <div class="overlay"></div>
+      </div>
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    
+    <!-- Session history section -->
+    <div class="container session-history">
+      <h2>Session History</h2>
+      <ul id="sessionHistory"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
